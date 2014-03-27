@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hr_simonsw_domain_SimonswUser" items="${simonswusers}" z="5MbuJqUHFJgbT+yTxZ6wfN0IWVo=">
+        <table:table data="${simonswusers}" id="l_com_hr_simonsw_domain_SimonswUser" path="/simonswusers" typeIdFieldName="userId" z="12mPGTWkFJR21Wq3m9kDCN/UPnI=">
+            <table:column calendar="true" dateTimePattern="${simonswUser_createdatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswUser_createDateTime" property="createDateTime" z="/JMs72G5L1rhuoc7s8FH/OtKNGA="/>
+            <table:column calendar="true" dateTimePattern="${simonswUser_lastmodifydatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswUser_lastModifyDateTime" property="lastModifyDateTime" z="QQp8Yt0UCK3nEE6dUeYu8+RM2SY="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswUser_password" property="password" z="sHw7XnUuEWlikCNF+Uiva2nnEPs="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswUser_username" property="username" z="xD2wx/MCVo2/AXWDq2K9tcXRCnY="/>
+        </table:table>
+    </page:list>
+</div>

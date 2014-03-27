@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hr_simonsw_domain_SimonswRole" items="${simonswroles}" z="oRUOkySynZ4hCUlQqfC98zAfjRE=">
+        <table:table data="${simonswroles}" id="l_com_hr_simonsw_domain_SimonswRole" path="/simonswroles" typeIdFieldName="roleId" z="DdYjzNTHmL2IzeIJ6fcVIx/lmwI=">
+            <table:column calendar="true" dateTimePattern="${simonswRole_createdatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswRole_createDateTime" property="createDateTime" z="7d2ysHJIQrvto410QiSGrN2tYu8="/>
+            <table:column calendar="true" dateTimePattern="${simonswRole_lastmodifydatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswRole_lastModifyDateTime" property="lastModifyDateTime" z="Xi2in4VGdzNmmQ262cO8iwiQ5nY="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswRole_description" property="description" z="fxmUVtNUStT5qsOcu0oZQy7Pl5E="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswRole_name" property="name" z="5GsTySVfkddHHixN6CgAJoIUAec="/>
+        </table:table>
+    </page:list>
+</div>

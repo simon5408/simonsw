@@ -1,0 +1,26 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-27 10:00:50
+hint
+project --topLevelPackage com.hr.simonsw
+hint
+hint
+persistence setup --provider HIBERNATE --database MYSQL --databaseName simonsw --userName root --password 123456
+database introspect --schema simonsw
+database reverse engineer --schema simonsw --package ~.domain
+controller all --package ~.web
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-27 10:08:28
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-27 10:32:30
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-27 10:36:24
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-27 10:36:28
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-27 10:37:02
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-27 13:57:52
+security setup
+json add --class ~.domain.SimonswDemo
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-27 14:03:38
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-27 14:34:25
+logging setup --level INFO --package ALL_SPRING 
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-27 14:35:59

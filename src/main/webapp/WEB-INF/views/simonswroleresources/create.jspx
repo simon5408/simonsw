@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_hr_simonsw_domain_SimonswRoleResource" modelAttribute="simonswRoleResource" path="/simonswroleresources" render="${empty dependencies}" z="WWXliNympL0IocRDumrAYYunm8Y=">
+        <field:select field="resourceId" id="c_com_hr_simonsw_domain_SimonswRoleResource_resourceId" itemValue="resourceId" items="${simonswresources}" path="/simonswresources" z="FRpWbRoaB9aiwDKBiRuJhApALRQ="/>
+        <field:select field="roleId" id="c_com_hr_simonsw_domain_SimonswRoleResource_roleId" itemValue="roleId" items="${simonswroles}" path="/simonswroles" z="9U8OAr4MW1BKfk+GX+IdqU7fw+Q="/>
+        <field:datetime dateTimePattern="${simonswRoleResource_createdatetime_date_format}" field="createDateTime" id="c_com_hr_simonsw_domain_SimonswRoleResource_createDateTime" z="WOYhIK8kr0RwRsryVNIMuiZ5nAo="/>
+        <field:datetime dateTimePattern="${simonswRoleResource_lastmodifydatetime_date_format}" field="lastModifyDateTime" id="c_com_hr_simonsw_domain_SimonswRoleResource_lastModifyDateTime" z="rGpiRFgt5yr4X/kmsxMTeb2Ahio="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_hr_simonsw_domain_SimonswRoleResource" render="${not empty dependencies}" z="3ezcclVYO5WeKgQ2U4PILFreQAU="/>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_hr_simonsw_domain_SimonswResource" modelAttribute="simonswResource" path="/simonswresources" render="${empty dependencies}" z="Qm5qrF7aDmbR7gBv5t53/3T58UA=">
+        <field:simple field="simonswRoleResources" id="c_com_hr_simonsw_domain_SimonswResource_simonswRoleResources" messageCode="entity_reference_not_managed" messageCodeAttribute="Simonsw Role Resource" z="/W8CqmEnFcyE6HYP2tsza6bjqvQ="/>
+        <field:datetime dateTimePattern="${simonswResource_createdatetime_date_format}" field="createDateTime" id="c_com_hr_simonsw_domain_SimonswResource_createDateTime" z="yUMGYox046eP5tAdIpAcqy8/UT4="/>
+        <field:datetime dateTimePattern="${simonswResource_lastmodifydatetime_date_format}" field="lastModifyDateTime" id="c_com_hr_simonsw_domain_SimonswResource_lastModifyDateTime" z="9HMHEvA5ldSTpIXENsgGDcL9Ez8="/>
+        <field:input field="modelname" id="c_com_hr_simonsw_domain_SimonswResource_modelname" z="1Dv1fZSp9CuoCfregnIKIAVR6cM="/>
+        <field:input field="parentid" id="c_com_hr_simonsw_domain_SimonswResource_parentid" z="s/Ujp+Ok89mUh2xH9+Y7mU5SuD0="/>
+        <field:input field="type" id="c_com_hr_simonsw_domain_SimonswResource_type" z="R+92ugWt9eq6Z4NQvZ1jdIa1YxY="/>
+        <field:input field="value" id="c_com_hr_simonsw_domain_SimonswResource_value" z="c7mUfjRc4YlToH7H6SXVWMQIS7s="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_hr_simonsw_domain_SimonswResource" render="${not empty dependencies}" z="YY0e75DNI/uEs3Wsf3SZ7MZijzM="/>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hr_simonsw_domain_SimonswResource" object="${simonswresource}" path="/simonswresources" z="io3M+G3vzVEiEp8RwVliJAbgnCg=">
+        <field:display calendar="true" dateTimePattern="${simonswResource_createdatetime_date_format}" field="createDateTime" id="s_com_hr_simonsw_domain_SimonswResource_createDateTime" object="${simonswresource}" z="O7KkBi/Oeg6Q1hEe+JlYxPsM50o="/>
+        <field:display calendar="true" dateTimePattern="${simonswResource_lastmodifydatetime_date_format}" field="lastModifyDateTime" id="s_com_hr_simonsw_domain_SimonswResource_lastModifyDateTime" object="${simonswresource}" z="c/uLsvpsvswaULHEm8isPxh8iUA="/>
+        <field:display field="modelname" id="s_com_hr_simonsw_domain_SimonswResource_modelname" object="${simonswresource}" z="F3wsXwdZdm6YUp9xsl3IIZuZbPw="/>
+        <field:display field="parentid" id="s_com_hr_simonsw_domain_SimonswResource_parentid" object="${simonswresource}" z="RNQ4yLFEVe9bUGqIGQK4xGFkU5k="/>
+        <field:display field="type" id="s_com_hr_simonsw_domain_SimonswResource_type" object="${simonswresource}" z="sXwqrR/AgsyBhARf+stLi4ADQ4g="/>
+        <field:display field="value" id="s_com_hr_simonsw_domain_SimonswResource_value" object="${simonswresource}" z="ezP7U9CKp6S70pSsehyHqwJHsjQ="/>
+    </page:show>
+</div>

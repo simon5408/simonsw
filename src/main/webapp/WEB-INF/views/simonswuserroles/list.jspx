@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hr_simonsw_domain_SimonswUserRole" items="${simonswuserroles}" z="QuCDYNjPTgwHUwdQFTuwJPpEFEw=">
+        <table:table data="${simonswuserroles}" id="l_com_hr_simonsw_domain_SimonswUserRole" path="/simonswuserroles" typeIdFieldName="roleUsId" z="CIF9aofxdauJph7ibxIjB2MrEeM=">
+            <table:column id="c_com_hr_simonsw_domain_SimonswUserRole_roleId" property="roleId" z="OzR0I3Aeakfx3dEa5dy8hA44cCM="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswUserRole_userId" property="userId" z="Z0e8itPifGt4syhj/pYaBXbGhoY="/>
+            <table:column calendar="true" dateTimePattern="${simonswUserRole_createdatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswUserRole_createDateTime" property="createDateTime" z="wL4ILdKQ9a8UVw+VH8N0Tt4Z/pc="/>
+            <table:column calendar="true" dateTimePattern="${simonswUserRole_lastmodifydatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswUserRole_lastModifyDateTime" property="lastModifyDateTime" z="iWuXVHxnLL92p1aKESeY4xTBE08="/>
+        </table:table>
+    </page:list>
+</div>

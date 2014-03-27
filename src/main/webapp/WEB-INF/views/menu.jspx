@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_simonswuser" z="1wgQBlHmBj38GMZmgEePwu7NnW0=">
+            <menu:item id="i_simonswuser_new" messageCode="global_menu_new" url="/simonswusers?form" z="hLVPKplOOxT8LLm4GqWQyBgu6Qs="/>
+            <menu:item id="i_simonswuser_list" messageCode="global_menu_list" url="/simonswusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="F8kyZwon7e8cAp1bEOVEHbYBdD4="/>
+        </menu:category>
+        <menu:category id="c_simonswdemo" z="XvSTQWfk3XQxK4D9ptgmAcmlOME=">
+            <menu:item id="i_simonswdemo_new" messageCode="global_menu_new" url="/simonswdemoes?form" z="3A4Vw9YbRocntv3N+JO+lQxreg4="/>
+            <menu:item id="i_simonswdemo_list" messageCode="global_menu_list" url="/simonswdemoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Iy8ePPzKQkolNGro7M4G8RI/75E="/>
+        </menu:category>
+        <menu:category id="c_simonswuserrole" z="z2ElnULHNDdIFtRhS0CLRjiihfQ=">
+            <menu:item id="i_simonswuserrole_new" messageCode="global_menu_new" url="/simonswuserroles?form" z="zQMXqnpOo7iLdIBZ+gQBr9Fyj8g="/>
+            <menu:item id="i_simonswuserrole_list" messageCode="global_menu_list" url="/simonswuserroles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jY/oLxSItwFC+9FJVDAZPQblxUU="/>
+        </menu:category>
+        <menu:category id="c_simonswrole" z="mSms5uaxXW14mLXnZKPmGTG4AeM=">
+            <menu:item id="i_simonswrole_new" messageCode="global_menu_new" url="/simonswroles?form" z="DGUf1J7ufZhYZb+KD7nwpJ9Ikd4="/>
+            <menu:item id="i_simonswrole_list" messageCode="global_menu_list" url="/simonswroles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="E8hjNBarude7/CsTcJCPhIqogN8="/>
+        </menu:category>
+        <menu:category id="c_simonswresource" z="GImJ4230FfRiAcGKTlTo0jLCNe4=">
+            <menu:item id="i_simonswresource_new" messageCode="global_menu_new" url="/simonswresources?form" z="sfGaZOimA3ABLLtXNeoYlSBgumQ="/>
+            <menu:item id="i_simonswresource_list" messageCode="global_menu_list" url="/simonswresources?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PX25rjaNH+X/iVWKY5Dlrwu/zGQ="/>
+        </menu:category>
+        <menu:category id="c_simonswroleresource" z="o0PDe2xX2Gd/RPyJvRIz7JbYtZQ=">
+            <menu:item id="i_simonswroleresource_new" messageCode="global_menu_new" url="/simonswroleresources?form" z="ECtn5bI2c9/CCQgk+jn6uV8D8nE="/>
+            <menu:item id="i_simonswroleresource_list" messageCode="global_menu_list" url="/simonswroleresources?page=1&amp;size=${empty param.size ? 10 : param.size}" z="IW1vTm3Bu3msIc8QHyH2G+J3Ytw="/>
+        </menu:category>
+    </menu:menu>
+</div>

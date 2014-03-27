@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hr_simonsw_domain_SimonswUser" idField="userId" modelAttribute="simonswUser" path="/simonswusers" versionField="none" z="/IMDKixsW6t89wmgWeKP9Bhcj90=">
+        <field:simple field="simonswUserRoles" id="c_com_hr_simonsw_domain_SimonswUser_simonswUserRoles" messageCode="entity_reference_not_managed" messageCodeAttribute="Simonsw User Role" z="4DKGhcftRQZai1rE0N+RlvBfdwQ="/>
+        <field:datetime dateTimePattern="${simonswUser_createdatetime_date_format}" field="createDateTime" id="c_com_hr_simonsw_domain_SimonswUser_createDateTime" z="+RSpQaHlhj3I2YMl382GVemkBRc="/>
+        <field:datetime dateTimePattern="${simonswUser_lastmodifydatetime_date_format}" field="lastModifyDateTime" id="c_com_hr_simonsw_domain_SimonswUser_lastModifyDateTime" z="FFIuseP/oJhfcM6jQwzFK/NSbuk="/>
+        <field:input field="password" id="c_com_hr_simonsw_domain_SimonswUser_password" z="MZRZWU/g33Tad44ylYKbY/I/JKk="/>
+        <field:input field="username" id="c_com_hr_simonsw_domain_SimonswUser_username" z="rz9iEk16Wn5hF+ZK6GxE+11fL8c="/>
+    </form:update>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hr_simonsw_domain_SimonswResource" items="${simonswresources}" z="576rUeuh3zMz/Bm4mH0L4fkMCdA=">
+        <table:table data="${simonswresources}" id="l_com_hr_simonsw_domain_SimonswResource" path="/simonswresources" typeIdFieldName="resourceId" z="YQDrd0G23eXZwRldcmb3mnMsN9I=">
+            <table:column calendar="true" dateTimePattern="${simonswResource_createdatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswResource_createDateTime" property="createDateTime" z="mH+CFB0Cx/4EUVH/Eeqkxo0b8S8="/>
+            <table:column calendar="true" dateTimePattern="${simonswResource_lastmodifydatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswResource_lastModifyDateTime" property="lastModifyDateTime" z="4GhC1f62PIgWSTtDssi6be19Hfk="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswResource_modelname" property="modelname" z="+edgq22opamHSuTvje8HK2l6KJ0="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswResource_parentid" property="parentid" z="X5k/ukiklMmoDT/1qsUBz8H2bDA="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswResource_type" property="type" z="bq2e2BkGQWcFL2+vMReQmL3su8E="/>
+        </table:table>
+    </page:list>
+</div>

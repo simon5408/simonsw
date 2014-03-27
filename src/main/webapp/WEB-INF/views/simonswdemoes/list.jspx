@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hr_simonsw_domain_SimonswDemo" items="${simonswdemoes}" z="F8HKHvIeEB/3CnfUApRYLuO5q3I=">
+        <table:table data="${simonswdemoes}" id="l_com_hr_simonsw_domain_SimonswDemo" path="/simonswdemoes" z="4BQL/SLPPKmIByCElsxedhwbJpQ=">
+            <table:column calendar="true" dateTimePattern="${simonswDemo_createdatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswDemo_createDateTime" property="createDateTime" z="yC2UYw8g41lB7JBphH7zuiw/a48="/>
+            <table:column calendar="true" dateTimePattern="${simonswDemo_lastmodifydatetime_date_format}" id="c_com_hr_simonsw_domain_SimonswDemo_lastModifyDateTime" property="lastModifyDateTime" z="ATc1ob4r3qFIkFzJz904fy47u88="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswDemo_code" property="code" z="IoftyCfqN6mR2j8EEwKPaZOuFAU="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswDemo_employeeNo" property="employeeNo" z="bw1WFwMXk8KYMIcFClFv91+MZrA="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswDemo_ext" property="ext" z="emvKrkmGkIFgOyJOpuNLqxVF+ts="/>
+            <table:column id="c_com_hr_simonsw_domain_SimonswDemo_name" property="name" z="02bqBCRPGAkUvgB3Y6Hxlwt3tlI="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hr_simonsw_domain_SimonswUser" object="${simonswuser}" path="/simonswusers" z="97d3QGQGBbMiGnP1aVdeZKVH5GU=">
+        <field:display calendar="true" dateTimePattern="${simonswUser_createdatetime_date_format}" field="createDateTime" id="s_com_hr_simonsw_domain_SimonswUser_createDateTime" object="${simonswuser}" z="xh+9GDvvO6SBtcwg1ZLaYMM2Cb8="/>
+        <field:display calendar="true" dateTimePattern="${simonswUser_lastmodifydatetime_date_format}" field="lastModifyDateTime" id="s_com_hr_simonsw_domain_SimonswUser_lastModifyDateTime" object="${simonswuser}" z="jdW05yqyZ5IfUi7mIf7Ww2khoOQ="/>
+        <field:display field="password" id="s_com_hr_simonsw_domain_SimonswUser_password" object="${simonswuser}" z="7guMW59g/bGRoa9XHyaKqrK6jNQ="/>
+        <field:display field="username" id="s_com_hr_simonsw_domain_SimonswUser_username" object="${simonswuser}" z="qwpvNeeE/wr2Px2jo81qSqj+j+Y="/>
+    </page:show>
+</div>
