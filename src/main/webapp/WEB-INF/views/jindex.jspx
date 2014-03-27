@@ -1,0 +1,60 @@
+<jsp:root xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:spring="http://www.springframework.org/tags" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  
+  <c:set var="req" value="${pageContext.request.contextPath}" />
+  
+  <script type="text/javascript" >
+    function loginFailed(data, status) {
+    	$.messager.alert('系统','登陆错误!','warning');
+    };
+    
+    function loginSucess(data, status) {
+		 if (data.loggedIn) {
+		     // success
+		      window.location = 'work';
+		 } else {
+		     loginFailed(data);
+		 }
+   };
+     
+    function OnClear(){
+    	loginForm.reset();
+	};
+	
+	
+    function OnLog(){
+        $.ajax({url: "${req}/api/login",
+            type: "POST",
+            dataType:"json",
+            beforeSend: function(xhr) {
+                xhr.withCredentials = true;
+            },
+            data: $("#loginForm").serialize(),
+            success: loginSucess,
+            error: loginFailed
+        });    
+	};
+	
+	</script>
+	
+	<h3><spring:message code="security_login_title" /></h3>
+	<form role="form" action="${home}/j_security_check" id="loginForm" method="post" autocomplete="off">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="j_username"/>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="j_password"/>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"/> Check me out
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-primary" onclick="OnLog();">登陆</button>
+		  <button class="btn btn-primary col-sm-offset-1" onclick="OnClear();">重填</button>
+		</form>
+				
+</jsp:root>
