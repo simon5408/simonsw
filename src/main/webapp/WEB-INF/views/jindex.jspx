@@ -6,13 +6,15 @@
   
   <script type="text/javascript" >
     function loginFailed(data, status) {
-    	$.messager.alert('系统','登陆错误!','warning');
+    	alert('系统 登陆错误!');
     };
     
     function loginSucess(data, status) {
+    	console.log(JSON.stringify(data));
 		 if (data.loggedIn) {
 		     // success
-		      window.location = 'work';
+		     // window.location = 'work';
+		     
 		 } else {
 		     loginFailed(data);
 		 }
@@ -24,10 +26,12 @@
 	
 	
     function OnLog(){
+    	console.log($("#loginForm").serialize());
         $.ajax({url: "${req}/api/login",
             type: "POST",
             dataType:"json",
             beforeSend: function(xhr) {
+            	console.log(456);
                 xhr.withCredentials = true;
             },
             data: $("#loginForm").serialize(),
@@ -53,7 +57,7 @@
 		      <input type="checkbox"/> Check me out
 		    </label>
 		  </div>
-		  <button type="submit" class="btn btn-primary" onclick="OnLog();">登陆</button>
+		  <button type="button" class="btn btn-primary" onclick="OnLog();">登陆</button>
 		  <button class="btn btn-primary col-sm-offset-1" onclick="OnClear();">重填</button>
 		</form>
 				
